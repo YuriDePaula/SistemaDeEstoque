@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace SistemaDeEstoque
 {
-    public partial class Form1 : Form
+    public partial class ConsultarProdutos : Form
     {
-        public Form1()
+        public ConsultarProdutos()
         {
             InitializeComponent();
         }
