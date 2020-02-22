@@ -39,6 +39,11 @@
             this.fornecedoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.supermercadoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.timeDate = new System.Windows.Forms.Timer(this.components);
+            this.caixaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.consultarProdutosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.estoquistasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.VendastoolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.ClientestoolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.ControlPanel.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -88,6 +93,8 @@
             this.menuStrip1.Font = new System.Drawing.Font("Fira Code", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.gdfdfghgghjvjToolStripMenuItem,
+            this.ClientestoolStripMenuItem1,
+            this.VendastoolStripMenuItem1,
             this.fornecedoresToolStripMenuItem,
             this.supermercadoToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
@@ -102,37 +109,71 @@
             this.consultarToolStripMenuItem,
             this.cadastrarToolStripMenuItem});
             this.gdfdfghgghjvjToolStripMenuItem.Name = "gdfdfghgghjvjToolStripMenuItem";
-            this.gdfdfghgghjvjToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
+            this.gdfdfghgghjvjToolStripMenuItem.Size = new System.Drawing.Size(84, 20);
             this.gdfdfghgghjvjToolStripMenuItem.Text = "Produtos";
             // 
             // consultarToolStripMenuItem
             // 
             this.consultarToolStripMenuItem.Name = "consultarToolStripMenuItem";
-            this.consultarToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
+            this.consultarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.consultarToolStripMenuItem.Text = "Consultar";
             this.consultarToolStripMenuItem.Click += new System.EventHandler(this.consultarToolStripMenuItem_Click);
             // 
             // cadastrarToolStripMenuItem
             // 
             this.cadastrarToolStripMenuItem.Name = "cadastrarToolStripMenuItem";
-            this.cadastrarToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
+            this.cadastrarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.cadastrarToolStripMenuItem.Text = "Cadastrar";
             // 
             // fornecedoresToolStripMenuItem
             // 
             this.fornecedoresToolStripMenuItem.Name = "fornecedoresToolStripMenuItem";
-            this.fornecedoresToolStripMenuItem.Size = new System.Drawing.Size(90, 20);
+            this.fornecedoresToolStripMenuItem.Size = new System.Drawing.Size(116, 20);
             this.fornecedoresToolStripMenuItem.Text = "Fornecedores";
             // 
             // supermercadoToolStripMenuItem
             // 
+            this.supermercadoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.caixaToolStripMenuItem,
+            this.consultarProdutosToolStripMenuItem,
+            this.estoquistasToolStripMenuItem});
             this.supermercadoToolStripMenuItem.Name = "supermercadoToolStripMenuItem";
-            this.supermercadoToolStripMenuItem.Size = new System.Drawing.Size(96, 20);
+            this.supermercadoToolStripMenuItem.Size = new System.Drawing.Size(116, 20);
             this.supermercadoToolStripMenuItem.Text = "Supermercado";
             // 
             // timeDate
             // 
             this.timeDate.Tick += new System.EventHandler(this.timeDate_Tick);
+            // 
+            // caixaToolStripMenuItem
+            // 
+            this.caixaToolStripMenuItem.Name = "caixaToolStripMenuItem";
+            this.caixaToolStripMenuItem.Size = new System.Drawing.Size(220, 22);
+            this.caixaToolStripMenuItem.Text = "Caixa";
+            // 
+            // consultarProdutosToolStripMenuItem
+            // 
+            this.consultarProdutosToolStripMenuItem.Name = "consultarProdutosToolStripMenuItem";
+            this.consultarProdutosToolStripMenuItem.Size = new System.Drawing.Size(220, 22);
+            this.consultarProdutosToolStripMenuItem.Text = "Consultar Produtos";
+            // 
+            // estoquistasToolStripMenuItem
+            // 
+            this.estoquistasToolStripMenuItem.Name = "estoquistasToolStripMenuItem";
+            this.estoquistasToolStripMenuItem.Size = new System.Drawing.Size(220, 22);
+            this.estoquistasToolStripMenuItem.Text = "Estoquistas";
+            // 
+            // VendastoolStripMenuItem1
+            // 
+            this.VendastoolStripMenuItem1.Name = "VendastoolStripMenuItem1";
+            this.VendastoolStripMenuItem1.Size = new System.Drawing.Size(68, 20);
+            this.VendastoolStripMenuItem1.Text = "Vendas";
+            // 
+            // ClientestoolStripMenuItem1
+            // 
+            this.ClientestoolStripMenuItem1.Name = "ClientestoolStripMenuItem1";
+            this.ClientestoolStripMenuItem1.Size = new System.Drawing.Size(84, 20);
+            this.ClientestoolStripMenuItem1.Text = "Clientes";
             // 
             // mainForm
             // 
@@ -167,6 +208,11 @@
         private System.Windows.Forms.ToolStripMenuItem cadastrarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem fornecedoresToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem supermercadoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem caixaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem consultarProdutosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem estoquistasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ClientestoolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem VendastoolStripMenuItem1;
     }
 }
 

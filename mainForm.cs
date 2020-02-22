@@ -29,15 +29,22 @@ namespace SistemaDeEstoque
             lblDate.Text = agora.ToLongDateString();
             lblHour.Visible = true;
             lblDate.Visible = true;
-            
+
         }
 
         private void consultarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ConsultarProdutos frmConsult = new ConsultarProdutos();
-            frmConsult.TopLevel = false;
-            frmConsult.Visible = true;
-            ControlPanel.Controls.Add(frmConsult);
+            if(ControlPanel.Controls.Count == 2)
+            {
+                ConsultarProdutos frmConsult = new ConsultarProdutos();
+                frmConsult.TopLevel = false;
+                frmConsult.Visible = true;
+                ControlPanel.Controls.Add(frmConsult);
+            }
+            else
+            {
+                ControlPanel.Controls.RemoveAt(2);
+            }
         }
     }
 }
