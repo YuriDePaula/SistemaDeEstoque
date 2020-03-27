@@ -34,17 +34,24 @@ namespace SistemaDeEstoque
 
         private void consultarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if(ControlPanel.Controls.Count == 2)
-            {
-                ConsultarProdutos frmConsult = new ConsultarProdutos();
-                frmConsult.TopLevel = false;
-                frmConsult.Visible = true;
-                ControlPanel.Controls.Add(frmConsult);
-            }
-            else
-            {
-                ControlPanel.Controls.RemoveAt(2);
-            }
+            //ConsultarProdutos frmConsult = new ConsultarProdutos();
+            //frmConsult.TopLevel = false;
+            //frmConsult.Visible = true;
+            //ControlPanel.Controls.Add(frmConsult);
+        }
+
+        private void monthCalendar1_DateChanged(object sender, DateRangeEventArgs e)
+        {
+
+        }
+
+        private void cadastrarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmCadastrarProduto frmCadastrar = new frmCadastrarProduto();
+            frmCadastrar.TopLevel = false;
+            frmCadastrar.Visible = true;
+            ControlPanel.Controls.Add(frmCadastrar);
+            
         }
     }
 }
